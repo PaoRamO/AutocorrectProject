@@ -81,21 +81,6 @@ sciense → science
 
 The program uses **Levenshtein Edit Distance** to determine how similar two words are. This distance represents the minimum number of insertions, deletions, or substitutions required to transform one word into another.
 
-### Steps:
-
-1. Load all dictionary words into a Trie
-2. Split user input into individual words
-3. For each word:
-
-   * If it exists in the dictionary, keep it
-   * Otherwise:
-
-     * Retrieve candidate words using Trie prefix matching
-     * Compute edit distance between the input word and each candidate
-     * Select the word with the smallest distance
-4. Combine corrected words into a sentence and display results
-
----
 
 ## Data Structures Used
 
@@ -128,7 +113,6 @@ Let:
 O(n × c × k²)
 ```
 
-* Edit distance takes O(k²)
 * Trie reduces the number of comparisons from all dictionary words (m) to a smaller subset (c)
 
 ---
@@ -171,21 +155,9 @@ project/
 
 The program was tested with multiple sentences including:
 
-* Correctly spelled input
 * Misspelled words
 * Mixed correct and incorrect words
 
-The program runs without crashing and produces clear, readable output.
-
----
-
-## Future Improvements
-
-* Add multiple suggestions instead of one
-* Use word frequency to improve accuracy
-* Support punctuation-aware corrections
-* Optimize further using advanced Trie traversal
-* Add a graphical user interface (GUI)
 
 ---
 

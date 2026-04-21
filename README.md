@@ -191,4 +191,4 @@ The program runs without crashing and produces clear, readable output.
 
 ## Author
 
-Your Name Here
+Paola Ramos Ortiz
